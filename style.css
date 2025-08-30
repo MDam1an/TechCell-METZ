@@ -5,6 +5,44 @@
     font-family: sans-serif;
 }
 
+@media (max-width: 600px) {
+    #navegacao {
+        flex-direction: column; /* menu em coluninha */
+        align-items: center;    /* centraliza no meio */
+    }
+
+    #navegacao p {
+        font-size: 16px;  /* aumenta um pouco pra ficar legível */
+        padding: 10px;
+        width: 100%;      /* cada item ocupa a largura toda */
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header input {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+body {
+    background-color: rgb(0, 33, 71);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.linha-de-divisao {
+    border: none;
+    height: 2px;
+    background-color: rgb(0, 119, 255);
+}
+
 header {
     background-color: rgb(16, 24, 39);
     color: rgb(248, 248, 255);
@@ -139,13 +177,90 @@ header h1 {
     height: 50px;
 }
 
-#navegacao p {
+#navegacao a {
     color: rgb(255, 255, 255);
     margin: 0;
     font-size: 16px;
     cursor: pointer;
 }
 
-#navegacao p:hover {
+#navegacao a:hover {
     color: rgb(0, 119, 255);
+}
+
+#apresentacao-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+#promocoes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+.produto-card {
+    width: 280px;
+    border: 2px solid rgb(0, 119, 255);
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgb(16, 24, 39);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 119, 255, 0.4), 0px -6px 16px rgba(0, 119, 255, 0.4);
+    cursor: pointer;
+}
+
+.produto-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-bottom: 2px solid rgb(0, 119, 255);
+}
+
+.produto-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: #111; 
+    height: 70px;
+    border-top: 2px solid #0a1a3c;
+}
+
+.produto-nome {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px  0;
+    color: rgb(255, 255, 255);
+}
+
+.produto-precos {
+    text-align: right;
+}
+
+.produto-preco-antigo {
+    font-size: 12px;
+    color: rgba(255, 0, 0, 0.918);
+    text-decoration: line-through;
+    margin: 4px 0;
+}
+
+.produto-preco {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 119, 255);
+    margin: 6px 0;
 }

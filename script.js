@@ -47,3 +47,31 @@ document.addEventListener('DOMContentLoaded', () => {
   mostrarSlide();
   iniciarAuto();
 });
+
+
+
+
+const texto = "O QUE VOCÊ PROCURA?";
+const elemento = document.getElementById("apresentacao-inicio");
+
+let i = 0;
+let apagando = false;
+
+function digitar() {
+    if (!apagando) {
+        elemento.textContent = texto.substring(0, i++);
+        if (i > texto.length) {
+            apagando = true;
+            setTimeout(digitar, 5000); // pausa de 5s antes de apagar
+            return;
+        }
+    } else {
+        elemento.textContent = texto.substring(0, i--);
+        if (i < 0) {
+            apagando = false;
+        }
+    }
+    setTimeout(digitar, 120); // velocidade da digitação
+}
+
+digitar();
