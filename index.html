@@ -6,6 +6,7 @@
     <title>TechCell METZ</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
@@ -18,7 +19,7 @@
         </form>
 
         <div class="icones">
-            <button class="botoes-do-cabecalho">🛒</button>
+            <button id="abrir-carrinho" class="botoes-do-cabecalho" aria-label="Abrir carrinho">🛒</button>
             <button class="botoes-do-cabecalho">👤</button>
         </div>
 
@@ -40,15 +41,15 @@
     <hr class="linha-de-divisao">
 
     <nav id="navegacao">
-        <a href="#promocoes">Promoções</a>
-        <a href="#">IPhones Novos</a>
-        <a href="#">IPhones Semi-Novos</a>
+        <a href="#apresentacao-promocoes">Promoções</a>
+        <a href="#apresentacao-iphones-novos">IPhones Novos</a>
+        <a href="#apresentacao-iphones-semi-novos">IPhones Semi-Novos</a>
         <a href="#">Acessorios</a>
     </nav>
 
     <hr class="linha-de-divisao">
 
-    <p id="apresentacao-inicio">O QUE VOCÊ PROCURA?</p>
+    <p id="apresentacao-promocoes">O QUE VOCÊ PROCURA?</p>
 
     <div id="promocoes">
 
@@ -58,7 +59,7 @@
                 <p class="produto-nome">IPhone 15</p>
                 <div class="produto-precos">
                     <p class="produto-preco-antigo">5.699,99 R$</p>
-                    <p class="produto-preco">5.099,99 R$</p>
+                    <p class="produto-preco-promocao">5.099,99 R$</p>
                 </div>
             </div>
         </div>
@@ -69,7 +70,7 @@
                 <p class="produto-nome">IPhone 14</p>
                 <div class="produto-precos">
                     <p class="produto-preco-antigo">5.099,99 R$</p>
-                    <p class="produto-preco">4.599,99 R$</p>
+                    <p class="produto-preco-promocao">4.599,99 R$</p>
                 </div>
             </div>
         </div>
@@ -80,19 +81,199 @@
                 <p class="produto-nome">IPhone 13</p>
                 <div class="produto-precos">
                     <p class="produto-preco-antigo">4.599,99 R$</p>
-                    <p class="produto-preco">4.199,99 R$</p>
+                    <p class="produto-preco-promocao">4.199,99 R$</p>
                 </div>
             </div>
         </div>
 
     </div>
 
+    <hr class="linha-de-divisao">
+
+    <p id="apresentacao-iphones-novos">IPhones Novos</p>
+
     <div id="iphones-novos">
 
-        
+        <div class="produto-card">
+            <img src="img/iphone16.jpg" alt="IPhone 16">
+            <div class="produto-info">
+                <p class="produto-nome">IPhone 16</p>
+                <div class="produto-precos">
+                    <p class="produto-preco-novo-semi">4.599,99 R$</p>
+                </div>
+            </div>
+        </div>
 
+        <div class="produto-card">
+            <img src="img/iphone15.jpg" alt="IPhone 15">
+            <div class="produto-info">
+                <p class="produto-nome">IPhone 15</p>
+                <div class="produto-precos">
+                    <p class="produto-preco-novo-semi">4.599,99 R$</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto-card">
+            <img src="img/iphone14.jpg" alt="IPhone 14">
+            <div class="produto-info">
+                <p class="produto-nome">IPhone 14</p>
+                <div class="produto-precos">
+                    <p class="produto-preco-novo-semi">4.599,99 R$</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto-card">
+            <img src="img/iphone13.jpg" alt="IPhone 13">
+            <div class="produto-info">
+                <p class="produto-nome">IPhone 13</p>
+                <div class="produto-precos">
+                    <p class="produto-preco-novo-semi">4.599,99 R$</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto-card">
+            <img src="img/iphone16.jpg" alt="IPhone 16">
+            <div class="produto-info">
+                <p class="produto-nome">IPhone 16</p>
+                <div class="produto-precos">
+                    <p class="produto-preco-novo-semi">4.599,99 R$</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto-card">
+            <img src="img/iphone15.jpg" alt="IPhone 15">
+            <div class="produto-info">
+                <p class="produto-nome">IPhone 15</p>
+                <div class="produto-precos">
+                    <p class="produto-preco-novo-semi">4.599,99 R$</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <hr class="linha-de-divisao">
+
+    <p id="apresentacao-iphones-semi-novos">IPhones Semi-Novos</p>
+
+    <div id="iphones-semi-novos">
+
+        <div class="produto-card">
+            <img src="img/iphone16.jpg" alt="IPhone 16">
+            <div class="produto-info">
+                <p class="produto-nome">IPhone 16</p>
+                <div class="produto-precos">
+                    <p class="produto-preco-novo-semi">4.599,99 R$</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto-card">
+            <img src="img/iphone15.jpg" alt="IPhone 15">
+            <div class="produto-info">
+                <p class="produto-nome">IPhone 15</p>
+                <div class="produto-precos">
+                    <p class="produto-preco-novo-semi">4.599,99 R$</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto-card">
+            <img src="img/iphone14.jpg" alt="IPhone 14">
+            <div class="produto-info">
+                <p class="produto-nome">IPhone 14</p>
+                <div class="produto-precos">
+                    <p class="produto-preco-novo-semi">4.599,99 R$</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto-card">
+            <img src="img/iphone13.jpg" alt="IPhone 13">
+            <div class="produto-info">
+                <p class="produto-nome">IPhone 13</p>
+                <div class="produto-precos">
+                    <p class="produto-preco-novo-semi">4.599,99 R$</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto-card">
+            <img src="img/iphone16.jpg" alt="IPhone 16">
+            <div class="produto-info">
+                <p class="produto-nome">IPhone 16</p>
+                <div class="produto-precos">
+                    <p class="produto-preco-novo-semi">4.599,99 R$</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto-card">
+            <img src="img/iphone15.jpg" alt="IPhone 15">
+            <div class="produto-info">
+                <p class="produto-nome">IPhone 15</p>
+                <div class="produto-precos">
+                    <p class="produto-preco-novo-semi">4.599,99 R$</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="cart-overlay" aria-hidden="true">
+        <div class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+            <header class="cart-topbar">
+                <div class="cart-brand">TechCell METZ</div>
+                <div class="cart-title" id="cart-title">
+                    <span class="cart-badge">🛒</span>
+                    Carrinho de Compras
+                </div>
+                <button id="fechar-carrinho" class="cart-back">Voltar</button>
+            </header>
+
+            <main class="cart-content">
+                <button class="cart-nav left">❮</button>
+
+  <div class="cart-items">
+    <!-- Card exemplo -->
+    <div class="cart-card">
+      <button class="remove-btn">🗑️</button>
+      <img src="img/iphone15.jpg" alt="iPhone 15">
+      <h3>IPhone 15</h3>
+      <p class="price">5.099,99 R$</p>
+      <div class="quantity">
+        <button>-</button>
+        <span>1</span>
+        <button>+</button>
+      </div>
+    </div>
+
+    <div class="cart-card">
+      <button class="remove-btn">🗑️</button>
+      <img src="img/iphone16.jpg" alt="iPhone 16">
+      <h3>IPhone 16</h3>
+      <p class="price">5.099,99 R$</p>
+      <div class="quantity">
+        <button>-</button>
+        <span>1</span>
+        <button>+</button>
+      </div>
+    </div>
+
+    <!-- Mais cards aqui -->
+  </div>
+
+  <button class="cart-nav right">❯</button>
+            </main>
+
+        </div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
